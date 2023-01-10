@@ -1,7 +1,7 @@
 const nombre = prompt("Ingrese su nombre");
 console.log ("Su nombre es " + nombre)
 
-const edad = parseInt(prompt("Ingrese su edad"));
+let edad = parseInt(prompt("Ingrese su edad"));
 
 // if (edad >= 18) {
 //     console.log ("Puede continuar con la reserva")
@@ -13,6 +13,7 @@ const edad = parseInt(prompt("Ingrese su edad"));
 while (edad <= 18) {
     alert ("¡Si sos menor de edad, no podrás continuar con la reserva!")
     console.log ("Acceso denegado: menor de edad")
+    edad = parseInt(prompt("Indique nuevamente su edad. Recuerde que la utilización de este sitio es solamente para mayores de edad."))
 }
 alert ("¡Ok, puedes seguir con la reserva!")
 console.log ("La edad es " + edad)
